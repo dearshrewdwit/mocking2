@@ -40,7 +40,7 @@ describe DockingStation do
         working_bike = FakeWorkingBike.new
         broken_bike = FakeBrokenBike.new
         docking_station = DockingStation.new([working_bike, broken_bike])
-        expect(docking_station.sample).to eq(true)
+        expect(docking_station.random_bike_working?).to eq(true)
       end
     end
 
@@ -49,7 +49,7 @@ describe DockingStation do
         working_bike = FakeWorkingBike.new
         broken_bike = FakeBrokenBike.new
         docking_station = DockingStation.new([working_bike, broken_bike])
-        expect(docking_station.sample).to eq(false)
+        expect(docking_station.random_bike_working?).to eq(false)
       end
     end
   end
