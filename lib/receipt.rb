@@ -1,5 +1,5 @@
 class Receipt
-  def print
-    puts "THANKS SO MUCH!"
+  def print(amount)
+    puts "You paid #{amount}. THANKS SO MUCH!"
   end
 end
